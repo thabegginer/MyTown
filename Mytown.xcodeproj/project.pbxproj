@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1FEE3B1C39919C00579F74 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FEE3A1C39919C00579F74 /* ViewController4.swift */; };
+		2FD108DD1C3845F0003FDF63 /* takephoto.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2FD108DC1C3845F0003FDF63 /* takephoto.mp3 */; };
+		2FD108DF1C38471D003FDF63 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD108DE1C38471D003FDF63 /* ViewController3.swift */; };
 		2FFEEBB81C36D3D40070CD7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFEEBB71C36D3D40070CD7A /* AppDelegate.swift */; };
 		2FFEEBBA1C36D3D40070CD7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFEEBB91C36D3D40070CD7A /* ViewController.swift */; };
 		2FFEEBBD1C36D3D40070CD7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FFEEBBB1C36D3D40070CD7A /* Main.storyboard */; };
@@ -14,6 +17,9 @@
 		2FFEEBC21C36D3D40070CD7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FFEEBC01C36D3D40070CD7A /* LaunchScreen.storyboard */; };
 		2FFEEBCD1C36D3D40070CD7A /* MytownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFEEBCC1C36D3D40070CD7A /* MytownTests.swift */; };
 		2FFEEBD81C36D3D40070CD7A /* MytownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFEEBD71C36D3D40070CD7A /* MytownUITests.swift */; };
+		2FFEEBE61C36F2890070CD7A /* BG.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2FFEEBE51C36F2890070CD7A /* BG.mp3 */; };
+		2FFEEBE81C36FA200070CD7A /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFEEBE71C36FA200070CD7A /* ViewController2.swift */; };
+		2FFEEBF01C3706380070CD7A /* lisbontram.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2FFEEBEF1C3706380070CD7A /* lisbontram.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F1FEE3A1C39919C00579F74 /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
+		2FD108DC1C3845F0003FDF63 /* takephoto.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = takephoto.mp3; sourceTree = "<group>"; };
+		2FD108DE1C38471D003FDF63 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		2FFEEBB41C36D3D40070CD7A /* Mytown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mytown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFEEBB71C36D3D40070CD7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FFEEBB91C36D3D40070CD7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +56,9 @@
 		2FFEEBD31C36D3D40070CD7A /* MytownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MytownUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFEEBD71C36D3D40070CD7A /* MytownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MytownUITests.swift; sourceTree = "<group>"; };
 		2FFEEBD91C36D3D40070CD7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FFEEBE51C36F2890070CD7A /* BG.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BG.mp3; sourceTree = "<group>"; };
+		2FFEEBE71C36FA200070CD7A /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		2FFEEBEF1C3706380070CD7A /* lisbontram.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lisbontram.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FD108E01C384723003FDF63 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FEE3A1C39919C00579F74 /* ViewController4.swift */,
+				2FD108DE1C38471D003FDF63 /* ViewController3.swift */,
+				2FFEEBE71C36FA200070CD7A /* ViewController2.swift */,
+				2FFEEBB91C36D3D40070CD7A /* ViewController.swift */,
+			);
+			name = VCs;
+			sourceTree = "<group>";
+		};
 		2FFEEBAB1C36D3D40070CD7A = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +120,11 @@
 		2FFEEBB61C36D3D40070CD7A /* Mytown */ = {
 			isa = PBXGroup;
 			children = (
+				2FD108E01C384723003FDF63 /* VCs */,
 				2FFEEBB71C36D3D40070CD7A /* AppDelegate.swift */,
-				2FFEEBB91C36D3D40070CD7A /* ViewController.swift */,
+				2FFEEBE51C36F2890070CD7A /* BG.mp3 */,
+				2FFEEBEF1C3706380070CD7A /* lisbontram.mp3 */,
+				2FD108DC1C3845F0003FDF63 /* takephoto.mp3 */,
 				2FFEEBBB1C36D3D40070CD7A /* Main.storyboard */,
 				2FFEEBBE1C36D3D40070CD7A /* Assets.xcassets */,
 				2FFEEBC01C36D3D40070CD7A /* LaunchScreen.storyboard */,
@@ -230,7 +256,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FFEEBC21C36D3D40070CD7A /* LaunchScreen.storyboard in Resources */,
+				2FFEEBF01C3706380070CD7A /* lisbontram.mp3 in Resources */,
+				2FD108DD1C3845F0003FDF63 /* takephoto.mp3 in Resources */,
 				2FFEEBBF1C36D3D40070CD7A /* Assets.xcassets in Resources */,
+				2FFEEBE61C36F2890070CD7A /* BG.mp3 in Resources */,
 				2FFEEBBD1C36D3D40070CD7A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +287,9 @@
 			files = (
 				2FFEEBBA1C36D3D40070CD7A /* ViewController.swift in Sources */,
 				2FFEEBB81C36D3D40070CD7A /* AppDelegate.swift in Sources */,
+				2FD108DF1C38471D003FDF63 /* ViewController3.swift in Sources */,
+				2FFEEBE81C36FA200070CD7A /* ViewController2.swift in Sources */,
+				2F1FEE3B1C39919C00579F74 /* ViewController4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +433,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LA.Mytown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -412,6 +445,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LA.Mytown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -482,6 +516,7 @@
 				2FFEEBDE1C36D3D40070CD7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FFEEBDF1C36D3D40070CD7A /* Build configuration list for PBXNativeTarget "MytownTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +525,7 @@
 				2FFEEBE11C36D3D40070CD7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FFEEBE21C36D3D40070CD7A /* Build configuration list for PBXNativeTarget "MytownUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +534,7 @@
 				2FFEEBE41C36D3D40070CD7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
