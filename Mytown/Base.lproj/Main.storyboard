@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mytown" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +20,610 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lisboa_229_30_31_tonemapped-copy" translatesAutoresizingMaskIntoConstraints="NO" id="aqA-G7-x2d">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="bottom" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="mRC-Zq-aBO">
+                                <rect key="frame" x="430" y="33" width="150" height="145"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UuO-CU-lIf">
+                                        <rect key="frame" x="69" y="0.0" width="81" height="53"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CULTURE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU3-7s-6H6">
+                                                <rect key="frame" x="0.0" y="0.0" width="81" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OUTDOOR" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QM5-sQ-sCC">
+                                                <rect key="frame" x="0.0" y="21" width="81" height="14"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lca-QX-mXc">
+                                                <rect key="frame" x="0.0" y="35" width="81" height="18"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="37" width="81" height="14"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="101" y="0.0" width="81" height="51"/>
+                                        </variation>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LISBOA" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLR-tj-tVM">
+                                        <rect key="frame" x="0.0" y="57" width="150" height="49"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="42"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="55" width="182" height="60"/>
+                                        </variation>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybs-rq-2fn">
+                                        <rect key="frame" x="53" y="110" width="97" height="35"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PORTUGAL" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjP-R9-KjN">
+                                                <rect key="frame" x="0.0" y="0.0" width="67" height="35"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Compass copy" translatesAutoresizingMaskIntoConstraints="NO" id="AzT-2C-sRJ">
+                                                <rect key="frame" x="67" y="0.0" width="30" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="aZs-VI-bWo"/>
+                                                    <constraint firstAttribute="width" constant="30" id="o7L-z8-88h"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="50" y="118" width="132" height="35"/>
+                                        </variation>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="FVH-ZY-C1x"/>
+                                    <constraint firstAttribute="height" constant="208" id="pB6-gN-nxN"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FVH-ZY-C1x"/>
+                                        <exclude reference="pB6-gN-nxN"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="194" y="28" width="182" height="153"/>
+                                </variation>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmP-Cn-efh">
+                                <rect key="frame" x="221" y="510" width="158" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.3219392137" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="5rE-jz-dJp"/>
+                                    <constraint firstAttribute="height" constant="30" id="qhQ-CW-q89"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="15"/>
+                                <state key="normal" title="EXPLORE LISBOA">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Explore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="63O-CA-Elk"/>
+                                    <segue destination="P4s-pY-GQY" kind="show" id="xHc-3L-gy7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nmP-Cn-efh" secondAttribute="bottom" constant="60" id="HKS-9C-3EQ">
+                                <variation key="heightClass=compact" constant="15"/>
+                            </constraint>
+                            <constraint firstItem="aqA-G7-x2d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JKf-Jh-OY3"/>
+                            <constraint firstAttribute="trailing" secondItem="aqA-G7-x2d" secondAttribute="trailing" id="Jla-Ct-uph"/>
+                            <constraint firstItem="aqA-G7-x2d" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XCk-4V-EM7"/>
+                            <constraint firstItem="nmP-Cn-efh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a8i-9Z-o34"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aqA-G7-x2d" secondAttribute="bottom" id="cHg-cK-bOj"/>
+                            <constraint firstItem="mRC-Zq-aBO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="dX1-EW-E1h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mRC-Zq-aBO" secondAttribute="trailing" constant="5" id="xCe-oE-aDp">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ExploreBtn" destination="nmP-Cn-efh" id="H0n-k4-vWS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="108" y="454"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="BUz-kI-Anq">
+            <objects>
+                <viewController id="P4s-pY-GQY" customClass="ViewController2" customModule="Mytown" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BWF-h3-eob"/>
+                        <viewControllerLayoutGuide type="bottom" id="0jz-V2-kQd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SSy-gb-G3s">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Lisboa_-_Panorama_-_03" translatesAutoresizingMaskIntoConstraints="NO" id="hQc-dJ-Eo5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="bDV-hb-SCE"/>
+                                    <constraint firstAttribute="width" constant="600" id="f7w-GC-Bnt"/>
+                                    <constraint firstAttribute="height" constant="128" id="vdz-cs-teC"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="bDV-hb-SCE"/>
+                                        <exclude reference="f7w-GC-Bnt"/>
+                                        <exclude reference="vdz-cs-teC"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="800" height="146.5"/>
+                                </variation>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="2OQ-2z-aew">
+                                <rect key="frame" x="20" y="169" width="560" height="394"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Lisbon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnO-EF-JwI">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="45"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.54409063459999996" green="0.6218678809" blue="0.77918669870000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="82"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJd-1r-Itn">
+                                        <rect key="frame" x="0.0" y="45" width="560" height="349"/>
+                                        <string key="text">Is the capital and the largest city of Portugal, with a population of 552,700 within its administrative limits in an area of 100.05 km². Its urban area extends beyond the city's administrative limits with a population of around 2.7 million people, being the 11th-most populous urban area in the European Union.Lisbon is one of the oldest cities in the world, and the oldest in Western Europe, predating other modern European capitals such as London, Paris and Rome by centuries. Julius Caesar made it a municipium called Felicitas Julia, adding to the name Olissipo. Ruled by a series of Germanic tribes from the 5th century, it was captured by the Moors in the 8th century. In 1147, the Crusaders under Afonso Henriques reconquered the city and since then it has been a major political, economic and cultural centre of Portugal. </string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.54409063459999996" green="0.6218678809" blue="0.77918669870000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="82" width="560" height="445"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="20" y="187" width="560" height="527"/>
+                                </variation>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oc1-c2-rAA">
+                                <rect key="frame" x="215" y="126" width="158" height="35"/>
+                                <color key="backgroundColor" red="1" green="0.3219392137" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="gMX-FA-Jcj"/>
+                                    <constraint firstAttribute="height" constant="30" id="grN-ej-uZy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="15"/>
+                                <state key="normal" title="FIND MORE">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="321" y="156.5" width="158" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Explore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oAa-o4-gFK"/>
+                                    <action selector="Soundtram:" destination="P4s-pY-GQY" eventType="touchUpInside" id="HKJ-Y3-z06"/>
+                                    <segue destination="cVx-5r-Fb5" kind="show" id="bTX-rK-dam"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T70-dw-ueL">
+                                <rect key="frame" x="20" y="20" width="78" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="3Zt-IT-5wj"/>
+                                    <constraint firstAttribute="height" constant="30" id="K9t-y5-Q6a"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="78" id="eLJ-Uj-8Bw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Photos">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Takephoto:" destination="P4s-pY-GQY" eventType="touchUpInside" id="A7r-S0-ZW1"/>
+                                    <segue destination="4i2-hA-WWM" kind="show" id="LnK-SS-iE0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="2OQ-2z-aew" secondAttribute="trailing" id="2YZ-qh-4k5"/>
+                            <constraint firstAttribute="trailing" secondItem="hQc-dJ-Eo5" secondAttribute="trailing" id="3RK-C1-Dsl"/>
+                            <constraint firstItem="hQc-dJ-Eo5" firstAttribute="leading" secondItem="SSy-gb-G3s" secondAttribute="leading" id="7Vc-VD-JfK"/>
+                            <constraint firstItem="Oc1-c2-rAA" firstAttribute="centerX" secondItem="SSy-gb-G3s" secondAttribute="centerX" id="7fp-vv-fwR"/>
+                            <constraint firstItem="Oc1-c2-rAA" firstAttribute="trailing" secondItem="SSy-gb-G3s" secondAttribute="trailingMargin" id="9kN-EF-PAU"/>
+                            <constraint firstItem="0jz-V2-kQd" firstAttribute="top" secondItem="2OQ-2z-aew" secondAttribute="bottom" constant="20" id="E8s-kv-ouF"/>
+                            <constraint firstItem="hQc-dJ-Eo5" firstAttribute="top" secondItem="SSy-gb-G3s" secondAttribute="top" id="EJk-on-nLA"/>
+                            <constraint firstItem="T70-dw-ueL" firstAttribute="top" secondItem="BWF-h3-eob" secondAttribute="bottom" id="FA2-sh-erB"/>
+                            <constraint firstItem="hQc-dJ-Eo5" firstAttribute="top" secondItem="SSy-gb-G3s" secondAttribute="top" id="HfJ-kF-a0s">
+                                <variation key="heightClass=compact" constant="-50"/>
+                            </constraint>
+                            <constraint firstItem="T70-dw-ueL" firstAttribute="leading" secondItem="SSy-gb-G3s" secondAttribute="leadingMargin" id="Mh4-2u-d3T"/>
+                            <constraint firstItem="2OQ-2z-aew" firstAttribute="top" secondItem="hQc-dJ-Eo5" secondAttribute="bottom" constant="40" id="OV6-NB-zLi">
+                                <variation key="heightClass=compact" constant="100"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="hQc-dJ-Eo5" secondAttribute="trailing" id="clh-Vj-mI2"/>
+                            <constraint firstItem="0jz-V2-kQd" firstAttribute="top" secondItem="hQc-dJ-Eo5" secondAttribute="bottom" constant="472" id="fbk-zh-rZk"/>
+                            <constraint firstItem="2OQ-2z-aew" firstAttribute="top" secondItem="Oc1-c2-rAA" secondAttribute="bottom" id="nhN-ug-khc"/>
+                            <constraint firstItem="hQc-dJ-Eo5" firstAttribute="leading" secondItem="SSy-gb-G3s" secondAttribute="leading" id="nlB-JV-nr9"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" secondItem="hQc-dJ-Eo5" secondAttribute="height" multiplier="3" constant="160" id="pHu-T4-mtv"/>
+                            <constraint firstItem="0jz-V2-kQd" firstAttribute="top" secondItem="Oc1-c2-rAA" secondAttribute="bottom" constant="20" id="rhu-aZ-i8H"/>
+                            <constraint firstItem="2OQ-2z-aew" firstAttribute="leading" secondItem="SSy-gb-G3s" secondAttribute="leadingMargin" id="uRB-fJ-hWe"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EJk-on-nLA"/>
+                                <exclude reference="clh-Vj-mI2"/>
+                                <exclude reference="nlB-JV-nr9"/>
+                                <exclude reference="9kN-EF-PAU"/>
+                                <exclude reference="fbk-zh-rZk"/>
+                                <exclude reference="rhu-aZ-i8H"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v1Y-Hc-6J3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="785" y="289"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="le7-bR-OoV">
+            <objects>
+                <viewController id="4i2-hA-WWM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y33-fz-ECU"/>
+                        <viewControllerLayoutGuide type="bottom" id="b43-IZ-YYG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e65-PS-fgX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="04_corvos_lx_b" translatesAutoresizingMaskIntoConstraints="NO" id="KLH-sl-JXj">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="4Aq-Ke-f09">
+                                <rect key="frame" x="324" y="128" width="265" height="340"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lisboa1g" translatesAutoresizingMaskIntoConstraints="NO" id="QRk-c8-IVF">
+                                        <rect key="frame" x="0.0" y="0.0" width="265" height="120"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="oI5-Yi-ZlB">
+                                        <rect key="frame" x="0.0" y="220" width="265" height="120"/>
+                                    </imageView>
+                                </subviews>
+                                <variation key="heightClass=compact" spacing="10"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdA-kA-mPE">
+                                <rect key="frame" x="502" y="28" width="78" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="78" id="SL1-HH-sDp"/>
+                                    <constraint firstAttribute="height" constant="30" id="ZAH-ue-NZR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="P4s-pY-GQY" kind="show" id="y2m-CO-5tz"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="DcH-LR-hLH">
+                                <rect key="frame" x="42" y="52" width="255" height="516"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="04" translatesAutoresizingMaskIntoConstraints="NO" id="pXo-rA-Vpy">
+                                        <rect key="frame" x="0.0" y="0.0" width="255" height="106"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HT_lisboa_Q40_" translatesAutoresizingMaskIntoConstraints="NO" id="hrp-Bz-463">
+                                        <rect key="frame" x="0.0" y="206" width="255" height="105"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1343741583lisboa" translatesAutoresizingMaskIntoConstraints="NO" id="jnf-1k-pjj">
+                                        <rect key="frame" x="0.0" y="411" width="255" height="106"/>
+                                    </imageView>
+                                </subviews>
+                                <variation key="heightClass=compact" spacing="10"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zdA-kA-mPE" firstAttribute="trailing" secondItem="e65-PS-fgX" secondAttribute="trailingMargin" id="19p-Ag-AeM"/>
+                            <constraint firstItem="zdA-kA-mPE" firstAttribute="top" secondItem="Y33-fz-ECU" secondAttribute="bottom" constant="8" id="C2G-Rt-2Sh"/>
+                            <constraint firstAttribute="trailing" secondItem="4Aq-Ke-f09" secondAttribute="trailing" id="FRq-fG-n36"/>
+                            <constraint firstItem="KLH-sl-JXj" firstAttribute="leading" secondItem="e65-PS-fgX" secondAttribute="leading" id="QL3-xW-ivL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Aq-Ke-f09" secondAttribute="trailing" constant="10" id="QaS-Bm-KhS"/>
+                            <constraint firstItem="4Aq-Ke-f09" firstAttribute="leading" secondItem="KLH-sl-JXj" secondAttribute="leading" multiplier="2" constant="10" id="TtH-3g-21v"/>
+                            <constraint firstAttribute="trailing" secondItem="KLH-sl-JXj" secondAttribute="trailing" id="U3b-uy-6bB"/>
+                            <constraint firstItem="4Aq-Ke-f09" firstAttribute="leading" secondItem="DcH-LR-hLH" secondAttribute="trailing" constant="20" id="Y7P-rr-gpJ"/>
+                            <constraint firstItem="DcH-LR-hLH" firstAttribute="top" secondItem="Y33-fz-ECU" secondAttribute="bottom" constant="32" id="YaA-j2-kqf"/>
+                            <constraint firstItem="DcH-LR-hLH" firstAttribute="leading" secondItem="e65-PS-fgX" secondAttribute="leadingMargin" constant="10" id="gNV-ml-aHc"/>
+                            <constraint firstItem="KLH-sl-JXj" firstAttribute="trailing" secondItem="DcH-LR-hLH" secondAttribute="trailing" multiplier="2" constant="30" id="onx-5z-Vb3"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="DcH-LR-hLH" secondAttribute="bottom" constant="32" id="r5K-9K-oqU"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="4Aq-Ke-f09" secondAttribute="bottom" constant="120" id="uqI-Jc-Ye5">
+                                <variation key="heightClass=compact" constant="80"/>
+                            </constraint>
+                            <constraint firstItem="b43-IZ-YYG" firstAttribute="top" secondItem="KLH-sl-JXj" secondAttribute="bottom" id="wH4-H4-hQF"/>
+                            <constraint firstItem="4Aq-Ke-f09" firstAttribute="top" secondItem="Y33-fz-ECU" secondAttribute="bottom" constant="120" id="zP1-h9-9kR">
+                                <variation key="heightClass=compact" constant="80"/>
+                            </constraint>
+                            <constraint firstItem="KLH-sl-JXj" firstAttribute="top" secondItem="e65-PS-fgX" secondAttribute="top" id="zny-HM-c4I"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="FRq-fG-n36"/>
+                                <exclude reference="TtH-3g-21v"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5j4-1l-NHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="1141"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="od5-G4-rmb">
+            <objects>
+                <viewController id="cVx-5r-Fb5" customClass="ViewController3" customModule="Mytown" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bJU-HP-J8i"/>
+                        <viewControllerLayoutGuide type="bottom" id="6rM-Uq-4wL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6jO-71-HvI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Lisbon tram" translatesAutoresizingMaskIntoConstraints="NO" id="KSS-Br-uJS">
+                                <rect key="frame" x="0.0" y="485" width="600" height="114.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="bkH-uO-nGg"/>
+                                    <constraint firstAttribute="width" secondItem="KSS-Br-uJS" secondAttribute="height" multiplier="295:128" id="xzE-Be-BJT"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="xzE-Be-BJT"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="472" width="800" height="128"/>
+                                </variation>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="8hh-EU-k3q">
+                                <rect key="frame" x="20" y="63" width="560" height="410"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Lisbon's Tram" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OJ-F7-L0B">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="57"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.54409063459999996" green="0.6218678809" blue="0.77918669870000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="69"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27T-HE-gfI">
+                                        <rect key="frame" x="0.0" y="57" width="560" height="354"/>
+                                        <string key="text">The first tramway in Lisbon entered service on 17 November 1873, as a horsecar line. On 30 August 1901, Lisbon's first electric tramway commenced operations. Within a year, all of the city's tramways had been converted to electric traction. Up until 1959, the network of lines was further developed, and in that year it reached its greatest extent. At that time, there was a total of 27 tram lines in Lisbon, of which six operated as circle lines. As the circle lines operated in both clockwise and anticlockwise directions, each with its own route number, it is more correct to speak of a total of 24 tram routes, all of them running on 900 mm (2 ft 11 7⁄16 in) narrow gauge tram lines.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.54409063459999996" green="0.6218678809" blue="0.77918669870000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="89" width="560" height="371"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3OJ-F7-L0B" firstAttribute="top" secondItem="8hh-EU-k3q" secondAttribute="centerY" id="oQJ-Bd-6o4"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="oQJ-Bd-6o4"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="20" y="70" width="560" height="460"/>
+                                </variation>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNm-D9-Gnj">
+                                <rect key="frame" x="221" y="442" width="158" height="35"/>
+                                <color key="backgroundColor" red="1" green="0.3219392137" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GNB-65-55Q"/>
+                                    <constraint firstAttribute="width" constant="158" id="msK-kc-3ZM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="15"/>
+                                <state key="normal" title="FIND MORE">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="321" y="434" width="158" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Explore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EDW-sn-ihT"/>
+                                    <action selector="Tramsound:" destination="cVx-5r-Fb5" eventType="touchUpInside" id="V5S-ZI-1vU"/>
+                                    <segue destination="8MK-Cs-zE0" kind="show" id="xeA-bd-jg7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8hh-EU-k3q" firstAttribute="leading" secondItem="6jO-71-HvI" secondAttribute="leadingMargin" id="3rE-eF-UTu"/>
+                            <constraint firstItem="8hh-EU-k3q" firstAttribute="centerY" secondItem="6jO-71-HvI" secondAttribute="centerY" constant="-75" id="6k3-bw-gOc"/>
+                            <constraint firstAttribute="trailing" secondItem="KSS-Br-uJS" secondAttribute="trailing" id="8qK-Td-sd0"/>
+                            <constraint firstAttribute="trailing" secondItem="KSS-Br-uJS" secondAttribute="trailing" id="CX5-cw-VQV"/>
+                            <constraint firstAttribute="bottom" secondItem="KSS-Br-uJS" secondAttribute="bottom" multiplier="3" id="EpA-b5-QG7"/>
+                            <constraint firstItem="8hh-EU-k3q" firstAttribute="top" secondItem="bJU-HP-J8i" secondAttribute="bottom" id="IfF-NI-ymK"/>
+                            <constraint firstItem="KSS-Br-uJS" firstAttribute="top" secondItem="ZNm-D9-Gnj" secondAttribute="bottom" constant="-10" id="R7y-3W-U4z"/>
+                            <constraint firstItem="8hh-EU-k3q" firstAttribute="top" secondItem="bJU-HP-J8i" secondAttribute="bottom" id="Ykh-0N-8QY"/>
+                            <constraint firstItem="ZNm-D9-Gnj" firstAttribute="centerX" secondItem="6jO-71-HvI" secondAttribute="centerX" id="dgM-hy-YeX"/>
+                            <constraint firstItem="KSS-Br-uJS" firstAttribute="top" secondItem="6jO-71-HvI" secondAttribute="top" id="lFt-jD-2XP"/>
+                            <constraint firstItem="ZNm-D9-Gnj" firstAttribute="top" secondItem="8hh-EU-k3q" secondAttribute="bottom" constant="50" id="mh3-hy-2Rv"/>
+                            <constraint firstItem="6rM-Uq-4wL" firstAttribute="top" secondItem="KSS-Br-uJS" secondAttribute="bottom" id="tKm-Hg-dCk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8hh-EU-k3q" secondAttribute="trailing" id="vDR-k6-wbJ"/>
+                            <constraint firstItem="KSS-Br-uJS" firstAttribute="leading" secondItem="6jO-71-HvI" secondAttribute="leading" id="whq-4a-5Dg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IfF-NI-ymK"/>
+                                <exclude reference="CX5-cw-VQV"/>
+                                <exclude reference="EpA-b5-QG7"/>
+                                <exclude reference="lFt-jD-2XP"/>
+                                <exclude reference="mh3-hy-2Rv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="view" destination="6jO-71-HvI" id="WVG-jL-Lc9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eCl-IU-X4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780" y="990"/>
+        </scene>
+        <!--View Controller4-->
+        <scene sceneID="sTh-SD-fCR">
+            <objects>
+                <viewController id="8MK-Cs-zE0" customClass="ViewController4" customModule="Mytown" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0lQ-dV-94e"/>
+                        <viewControllerLayoutGuide type="bottom" id="sIq-zd-KE0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J74-er-WaM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="1_Mosteiro_dos_Jer_nimos_Panorama_2" translatesAutoresizingMaskIntoConstraints="NO" id="PZ9-Qk-rGd">
+                                <rect key="frame" x="0.0" y="-40" width="600" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="CgL-A9-x1I"/>
+                                    <constraint firstAttribute="height" constant="170" id="DtI-9m-KPb"/>
+                                    <constraint firstAttribute="width" secondItem="PZ9-Qk-rGd" secondAttribute="height" multiplier="60:17" id="ddf-X4-Bdm"/>
+                                    <constraint firstAttribute="width" secondItem="PZ9-Qk-rGd" secondAttribute="height" multiplier="60:17" id="iNv-Hn-gFx"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="DtI-9m-KPb"/>
+                                        <exclude reference="iNv-Hn-gFx"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="800" height="170"/>
+                                </variation>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lrD-NM-EXh">
+                                <rect key="frame" x="20" y="280" width="560" height="165"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Mosteiro dos Jerónimos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgf-B9-uX4">
+                                        <rect key="frame" x="0.0" y="1" width="560" height="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.54409063459999996" green="0.6218678809" blue="0.77918669870000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vt7-KA-cHP">
+                                        <rect key="frame" x="0.0" y="41" width="560" height="125"/>
+                                        <string key="text">The construction of the monastery and church began on 6 January 1501, and was completed 100 years later.King Manuel originally funded the project with moneys obtained from the Vintena da Pimenta, a 5 percent tax on commerce from Africa and the Orient, equivalent to 70 kilograms (150 lb) of gold per year, with the exception of those taxes collected on the importation of pepper, cinnamon and cloves, which went directly to the Crown.With the influx of such riches, the architects were not limited to small-scale plans, and resources already prescribed for the Monastery of Batalha, including the Aviz pantheon, were redirected to the project in Belém.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.54409063459999996" green="0.6218678809" blue="0.77918669870000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Vt7-KA-cHP" firstAttribute="top" secondItem="Jgf-B9-uX4" secondAttribute="bottom" constant="50" id="Pnh-Hf-ilB"/>
+                                    <constraint firstItem="Jgf-B9-uX4" firstAttribute="top" secondItem="lrD-NM-EXh" secondAttribute="centerY" id="RBs-vE-KNc"/>
+                                    <constraint firstAttribute="height" constant="56" id="sev-Jy-rmZ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="sev-Jy-rmZ"/>
+                                        <exclude reference="RBs-vE-KNc"/>
+                                        <exclude reference="Pnh-Hf-ilB"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="20" y="309" width="560" height="165"/>
+                                </variation>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgU-6H-SZd">
+                                <rect key="frame" x="221" y="138" width="158" height="35"/>
+                                <color key="backgroundColor" red="1" green="0.3219392137" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NWE-8Y-ws0"/>
+                                    <constraint firstAttribute="width" constant="158" id="q1i-nJ-U6g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="15"/>
+                                <state key="normal" title="ABOUT LISBON">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Explore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hbM-gm-qRG"/>
+                                    <action selector="SoundTram:" destination="8MK-Cs-zE0" eventType="touchUpInside" id="Ygc-Ai-JCH"/>
+                                    <action selector="Tramsound:" destination="cVx-5r-Fb5" eventType="touchUpInside" id="cXZ-jj-O2B"/>
+                                    <segue destination="P4s-pY-GQY" kind="show" id="hqs-qw-d2J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PZ9-Qk-rGd" firstAttribute="top" secondItem="J74-er-WaM" secondAttribute="top" id="DtQ-OX-bYZ"/>
+                            <constraint firstItem="PZ9-Qk-rGd" firstAttribute="top" secondItem="J74-er-WaM" secondAttribute="top" id="GvC-Ji-Cmv"/>
+                            <constraint firstAttribute="trailing" secondItem="PZ9-Qk-rGd" secondAttribute="trailing" id="JPk-Zw-X8M"/>
+                            <constraint firstItem="lrD-NM-EXh" firstAttribute="leading" secondItem="J74-er-WaM" secondAttribute="leadingMargin" id="K18-ZD-37d"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lrD-NM-EXh" secondAttribute="trailing" id="M0i-86-mrR"/>
+                            <constraint firstItem="PZ9-Qk-rGd" firstAttribute="leading" secondItem="J74-er-WaM" secondAttribute="leading" id="MWn-3c-gbM"/>
+                            <constraint firstItem="RgU-6H-SZd" firstAttribute="top" secondItem="PZ9-Qk-rGd" secondAttribute="bottom" constant="-10" id="NO1-zz-bcD"/>
+                            <constraint firstAttribute="trailing" secondItem="PZ9-Qk-rGd" secondAttribute="trailing" id="Wty-9j-ovJ"/>
+                            <constraint firstAttribute="trailing" secondItem="PZ9-Qk-rGd" secondAttribute="trailing" id="ZVm-9Q-wqu"/>
+                            <constraint firstItem="PZ9-Qk-rGd" firstAttribute="top" secondItem="J74-er-WaM" secondAttribute="top" id="a8f-Oa-OhL">
+                                <variation key="heightClass=compact" constant="-35"/>
+                            </constraint>
+                            <constraint firstItem="PZ9-Qk-rGd" firstAttribute="leading" secondItem="J74-er-WaM" secondAttribute="leading" id="gp6-CY-dcO"/>
+                            <constraint firstItem="RgU-6H-SZd" firstAttribute="centerX" secondItem="J74-er-WaM" secondAttribute="centerX" id="iBS-XI-Cvn"/>
+                            <constraint firstItem="lrD-NM-EXh" firstAttribute="centerY" secondItem="J74-er-WaM" secondAttribute="centerY" constant="75" id="jYB-fK-l8y"/>
+                            <constraint firstItem="sIq-zd-KE0" firstAttribute="top" secondItem="PZ9-Qk-rGd" secondAttribute="bottom" id="rAb-ec-AZL"/>
+                            <constraint firstItem="PZ9-Qk-rGd" firstAttribute="leading" secondItem="J74-er-WaM" secondAttribute="leading" id="xf6-aQ-Hyj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DtQ-OX-bYZ"/>
+                                <exclude reference="GvC-Ji-Cmv"/>
+                                <exclude reference="JPk-Zw-X8M"/>
+                                <exclude reference="ZVm-9Q-wqu"/>
+                                <exclude reference="gp6-CY-dcO"/>
+                                <exclude reference="xf6-aQ-Hyj"/>
+                                <exclude reference="rAb-ec-AZL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="view" destination="J74-er-WaM" id="ivq-X1-DHG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pe2-JG-OT3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="783" y="1751"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="04" width="2000" height="1000"/>
+        <image name="04_corvos_lx_b" width="720" height="500"/>
+        <image name="1343741583lisboa" width="2510" height="1393"/>
+        <image name="1_Mosteiro_dos_Jer_nimos_Panorama_2" width="6169" height="2467"/>
+        <image name="3" width="1689" height="1118"/>
+        <image name="Compass copy" width="687" height="600"/>
+        <image name="HT_lisboa_Q40_" width="1680" height="656"/>
+        <image name="Lisboa_-_Panorama_-_03" width="2880" height="1067"/>
+        <image name="Lisbon tram" width="1600" height="531"/>
+        <image name="lisboa1g" width="2048" height="1210"/>
+        <image name="lisboa_229_30_31_tonemapped-copy" width="3215" height="2134"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="y2m-CO-5tz"/>
+    </inferredMetricsTieBreakers>
 </document>
